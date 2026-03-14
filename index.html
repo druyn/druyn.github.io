@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <!-- make responsive -->
@@ -16,9 +16,7 @@
     <!-- fix firefox bug onload-->
     <!-- <script>0</script> -->
 
-    <!----------------------------------------------------------------------------------------------------------------->
-    <!-- NAVIGATION BAR -->
-
+    <!-- NAVBAR -->
     <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <!-- LOGO -->
@@ -38,41 +36,24 @@
             <div class="navbar-start navbar-center">
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Produkt
-                    </a>
-
+                    <a class="navbar-link">Produkt</a>
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            Features
-                        </a>
-                        <a class="navbar-item">
-                            Dokumentation
-                        </a>
+                        <a class="navbar-item">Features</a>
+                        <a class="navbar-item">Dokumentation</a>
                     </div>
                 </div>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Support
-                    </a>
+                    <a class="navbar-link">Support</a>
 
                     <div class="navbar-dropdown">
-                        <a class="navbar-item">
-                            Über uns
-                        </a>
-                        <a class="navbar-item">
-                            Jobs
-                        </a>
-                        <a class="navbar-item">
-                            Kontakt
-                        </a>
+                        <a class="navbar-item">Über uns</a>
+                        <a class="navbar-item">Jobs</a>
+                        <a class="navbar-item">Kontakt</a>
                     </div>
                 </div>
 
-                <a class="navbar-item">
-                    Preise
-                </a>
+                <a class="navbar-item">Preise</a>
             </div>
 
             <div class="navbar-end">
@@ -90,13 +71,79 @@
         </div>
     </nav>
 
-    <!-- HEADER -->
+    <!-- HERO -->
     <section class="hero is-fullheight-with-navbar header-image">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h1 class="title is-1 is-spaced has-text-white">Project planning shouldn’t be rocket science — our app boosts your clarity, focus and ease of mind by eliminating micromanagement and making it a joy to achieve your goals.</h1>
-                <h2 class="subtitle has-text-white">A planning tool that closes the loop — from project setup to automated scheduling and time tracking — for teams or individuals aiming for the stars.</h2>
-                <div class="buttons is-centered"><a class="control button is-primary" href="#">Try it for free.</a></div>
+
+                <h1 class="title is-1 is-spaced has-text-white">
+                    Projektplanung muss keine Raketenwissenschaft sein.
+                </h1>
+
+                <h2 class="subtitle has-text-white">
+                    Plane Projektstruktur, Aufwände und Ressourcen –
+                    Druyn berechnet automatisch realistische Zeitpläne 
+                    und zeigt bei jeder Änderung sofort, was tatsächlich möglich ist.
+                </h2>
+
+                <div class="buttons is-centered">
+                    <a class="button is-primary is-medium" href="https://app.druyn.com/signup">
+                        Kostenlos ausprobieren
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section">
+        <div class="container has-text-centered">
+
+            <h2 class="title">Warum Projektpläne oft scheitern</h2>
+
+            <p class="subtitle">
+                Du bist es leid, Projekte detailliert vorauszuplanen –
+                nur um später festzustellen, dass der Plan nicht zur Realität passt?
+            </p>
+
+            <p class="content">
+                Klassische Planungstools erzeugen starre Pläne. 
+                Doch sobald sich etwas ändert, verliert der gesamte Zeitplan an Aussagekraft.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="section has-background-light">
+        <div class="container">
+            <div class="columns is-vcentered">
+
+                <div class="column">
+
+                    <h2 class="title">
+                        Schliesse den Kreis zwischen Planung und Realität
+                    </h2>
+
+                    <p class="content">
+                        Plane Projekte hierarchisch – von Projektphasen bis zu einzelnen Aufgaben.
+                        Schätze für jede Aufgabe die Zeitaufwände, Deadlines und füge Ressourcen hinzu.
+                        Druyn berechnet eine zeitliche Vorhersage
+                        die sich laufend dem aktualisierten Projektfortschritt anpasst.
+                        So behaltest du und dein Team auf eine intuitive Weise stets den Überblick.
+                    </p>
+
+                </div>
+
+                <div class="column">
+                    <p class="content">
+                        Ein moderner Planungsalgorithmus berücksichtigt
+                        Aufgabenabhängigkeiten, Ressourcen und Kapazitäten,
+                        um den kritischen Pfad dynamisch neu zu berechnen.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -109,40 +156,58 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Intuitive & visual</h3>
-                            <p class="block">Visually configure your projects and tasks, log progress playfully on the fly and instantly regenerate schedule estimates — repeat as needed and stay aligned with reality.</p>
-                            <a href="#">Read more</a>
+                            <h3 class="title is-4">Intuitiv & visuell</h3>
+                            <p class="block">
+                                Plane Projekte visuell wie ein Prozess-Flussdiagramm,
+                                markiere erledigte Aufgaben mit Freude
+                                und lass Druyn automatisch neue Zeitpläne berechnen.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Automated efficiency</h3>
-                            <p class="block">A proven scheduling algorithm calculates the optimal task order and timing, helping you adapt effortlessly while staying focused on what truly matters.</p>
-                            <a href="#">Read more</a>
+                            <h3 class="title is-4">Automatische Planung</h3>
+                            <p class="block">
+                                Unser Planungsalgorithmus berechnet automatisch
+                                die optimale Reihenfolge deiner Aufgaben und passt
+                                Zeitpläne dynamisch an Veränderungen an.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Team focus</h3>
-                            <p class="block">Designed from ground up to handle multiple projects and resources, keeping everyone aligned comes naturally — minimizing confusion and visually revealing the best path forward.</p>
-                            <a href="#">Read more</a>
+                            <h3 class="title is-4">Team Fokus</h3>
+                            <p class="block">
+                                Verwalte mehrere Projekte und Ressourcen gleichzeitig
+                                und halte dein Team jederzeit synchron.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Knowledge growth</h3>
-                            <p class="block">Build on your experience — reuse proven project setups with predefined phases and tasks, so you're not reinventing the wheel each time.</p>
-                            <a href="#">Read more</a>
+                            <h3 class="title is-4">Wissen aufbauen</h3>
+                            <p class="block">
+                                Nutze bewährte Projektstrukturen erneut.
+                                So musst du das Rad nicht jedes Mal neu erfinden
+                                und vergisst keine wichtigen Projektphasen oder Aufgaben.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+        <div class="container has-text-centered">
+             <h2 class="title">So funktioniert Druyn</h2>
         </div>
     </section>
 
