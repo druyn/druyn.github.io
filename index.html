@@ -18,57 +18,32 @@
 
     <!-- NAVBAR -->
     <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+
         <div class="navbar-brand">
-            <!-- LOGO -->
-            <a class="navbar-item is-arrowless">
+            <a class="navbar-item druyn-brand" href="/">
                 <img src="/images/favicon.png" width="28" height="28">
-            </a>
 
-            <!-- SETTINGS BUTTON (only on touch devices) -->
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <span class="brand-text">Druyn</span>
+
+                <span class="brand-tagline">
+                    Planung → Ausführung → Vorhersage
+                </span>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start navbar-center">
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">Produkt</a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">Features</a>
-                        <a class="navbar-item">Dokumentation</a>
-                    </div>
-                </div>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">Support</a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">Über uns</a>
-                        <a class="navbar-item">Jobs</a>
-                        <a class="navbar-item">Kontakt</a>
-                    </div>
-                </div>
-
-                <a class="navbar-item">Preise</a>
-            </div>
-
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-light" href="https://app.druyn.com">
-                            Anmelden
-                        </a>
-                        <a class="button is-primary" href="https://app.druyn.com/signup">
-                            Registrieren
-                        </a>
-                    </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-light" href="https://app.druyn.com">
+                        Anmelden
+                    </a>
+                    <a class="button is-primary" href="https://app.druyn.com/signup">
+                        Registrieren
+                    </a>
                 </div>
             </div>
         </div>
+
     </nav>
 
     <!-- HERO -->
@@ -76,21 +51,34 @@
         <div class="hero-body">
             <div class="container has-text-centered">
 
-                <h1 class="title is-1 is-spaced has-text-white">
+                <h1 class="title is-2 is-spaced">
                     Projektplanung muss keine Raketenwissenschaft sein.
                 </h1>
 
-                <h2 class="subtitle has-text-white">
-                    Plane Projektstruktur, Aufwände und Ressourcen –
-                    Druyn berechnet automatisch realistische Zeitpläne 
-                    und zeigt bei jeder Änderung sofort, was tatsächlich möglich ist.
+                <h2 class="subtitle">
+                    Plane Projekte, Aufgaben und Ressourcen – Druyn berechnet automatisch
+                    realistische Zeitpläne auf Basis von Abhängigkeiten und Teamkapazitäten.
                 </h2>
 
+                <div class="cycle" style="opacity:0.8;margin-top:10px">
+                    <span>Planen</span>
+                    <span class="arrow">→</span>
+                    <span>Ausführen</span>
+                    <span class="arrow">→</span>
+                    <span>Vorhersagen</span>
+                </div>
+
+                <!-- CTA -->
                 <div class="buttons is-centered">
                     <a class="button is-primary is-medium" href="https://app.druyn.com/signup">
                         Kostenlos ausprobieren
                     </a>
                 </div>
+
+                <br>
+
+                <img src="/images/planning.png"
+                style="max-width:900px;width:100%;border-radius:12px;box-shadow:0 40px 80px rgba(0,0,0,0.35);">
 
             </div>
         </div>
@@ -123,28 +111,132 @@
                 <div class="column">
 
                     <h2 class="title">
-                        Schliesse den Kreis zwischen Planung und Realität
+                        Schliesse den Kreis zwischen Planung und Realität.
                     </h2>
 
                     <p class="content">
                         Plane Projekte hierarchisch – von Projektphasen bis zu einzelnen Aufgaben.
-                        Schätze für jede Aufgabe die Zeitaufwände, Deadlines und füge Ressourcen hinzu.
-                        Druyn berechnet eine zeitliche Vorhersage
-                        die sich laufend dem aktualisierten Projektfortschritt anpasst.
-                        So behaltest du und dein Team auf eine intuitive Weise stets den Überblick.
+                        Schätze für jede Aufgabe die Zeitaufwände, Deadlines und teile Ressourcen
+                        zu.
+                        Druyn berechnet automatisch eine Zeitvorhersage, die sich laufend an den
+                        Projektfortschritt anpasst. So behalten du und dein Team jederzeit intuitiv
+                        den Überblick.
                     </p>
 
                 </div>
 
                 <div class="column">
                     <p class="content">
-                        Ein moderner Planungsalgorithmus berücksichtigt
-                        Aufgabenabhängigkeiten, Ressourcen und Kapazitäten,
-                        um den kritischen Pfad dynamisch neu zu berechnen.
+                        Druyn ersetzt keine Menschen.
+
+                        Und Druyn ist keine Black-Box-KI.
+
+                        Stattdessen kombiniert die Plattform deterministische
+                        Optimierungsalgorithmen mit der kollektiven Intelligenz deines Teams.
+
+                        So entsteht echte Planungssicherheit.
                     </p>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered">So funktioniert Druyn</h2>
+
+            <div class="tabs is-centered is-medium">
+                <ul>
+                    <li class="is-active" data-tab="planning">
+                        <a>Ablauf</a>
+                    </li>
+                    <li data-tab="executing">
+                        <a>Ausführung</a>
+                    </li>
+                    <li data-tab="predicting">
+                        <a>Vorhersage</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="has-text-centered">
+
+                <div id="planning" class="tab-content">
+                    <img src="/images/planning.png" style="max-width:900px;width:100%;border-radius:12px;box-shadow:0 30px 70px rgba(0,0,0,0.25);">
+                    <p class="content">
+                        Plane Projekte visuell wie ein Prozessdiagramm und gruppiere Projekte
+                        und Aufgaben hierarchisch.
+                    </p>
+                </div>
+
+                <div id="executing" class="tab-content" style="display:none">
+                    <img src="/images/executing.png" style="max-width:900px;width:100%;border-radius:12px;box-shadow:0 30px 70px rgba(0,0,0,0.25);">
+                    <p class="content">
+                        Buche Arbeitsstunden mühelos direkt auf Aufgaben und behalte die Planung
+                        automatisch im Einklang mit der Realität.
+                    </p>
+                </div>
+
+                <div id="predicting" class="tab-content" style="display:none">
+                    <img src="/images/predicting.png" style="max-width:900px;width:100%;border-radius:12px;box-shadow:0 30px 70px rgba(0,0,0,0.25);">
+                    <p class="content">
+                        Druyn berechnet automatisch realistische Zeitprognosen basierend auf
+                        Abhängigkeiten und Ressourcen.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section has-background-light">
+        <div class="container has-text-centered">
+            <h2 class="title">Für wen ist Druyn?</h2>
+
+            <p class="subtitle">
+                Entwickelt für Menschen, die komplexe Projekte koordinieren müssen.
+            </p>
+
+            <div class="columns">
+
+                <div class="column">
+                    <p><strong>Projektleiter</strong></p>
+                    <p>die mehrere Projekte gleichzeitig planen und koordinieren.</p>
+                </div>
+
+                <div class="column">
+                    <p><strong>Ingenieure & Entwickler</strong></p>
+                    <p>die strukturierte Abläufe und klare Prioritäten brauchen.</p>
+                </div>
+
+                <div class="column">
+                    <p><strong>Kleine Teams</strong></p>
+                    <p>die gemeinsam an Projekten arbeiten und sich synchron halten wollen.</p>
+                </div>
+
+            </div>
+
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+
+                    <blockquote class="box">
+                        <p>
+                            "Druyn ist das erste Planungstool, bei dem ich auch bei mehreren
+                            Projekten den Überblick behalte.
+
+                            Die zeitliche Vorhersage ist überraschend realitätsnah.
+                            Dank Druyn kann ich mich auf das Wesentliche konzentrieren."
+                        </p>
+
+                        <p><strong>— Silvan Müller, Holzbauingenieur</strong></p>
+                    </blockquote>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -158,9 +250,10 @@
                         <div class="card-content">
                             <h3 class="title is-4">Intuitiv & visuell</h3>
                             <p class="block">
-                                Plane Projekte visuell wie ein Prozess-Flussdiagramm,
-                                markiere erledigte Aufgaben mit Freude
-                                und lass Druyn automatisch neue Zeitpläne berechnen.
+                                Plane Projekte visuell wie ein Prozessdiagramm und buche
+                                Fortschritt direkt auf Aufgaben.
+
+                                Minimalistisch gestaltet – Gamification statt Overengineering.
                             </p>
                         </div>
                     </div>
@@ -170,9 +263,11 @@
                         <div class="card-content">
                             <h3 class="title is-4">Automatische Planung</h3>
                             <p class="block">
-                                Unser Planungsalgorithmus berechnet automatisch
-                                die optimale Reihenfolge deiner Aufgaben und passt
-                                Zeitpläne dynamisch an Veränderungen an.
+                                Druyn berechnet automatisch realistische Zeitpläne auf Basis von
+                                Abhängigkeiten, Ressourcen und Deadlines.
+
+                                Der kritische Pfad passt sich laufend an den echten
+                                Projektfortschritt an.
                             </p>
                         </div>
                     </div>
@@ -180,10 +275,12 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Team Fokus</h3>
+                            <h3 class="title is-4">Team Koordination</h3>
                             <p class="block">
-                                Verwalte mehrere Projekte und Ressourcen gleichzeitig
-                                und halte dein Team jederzeit synchron.
+                                Verwalte mehrere Projekte und Ressourcen gleichzeitig und behalte
+                                jederzeit den Überblick.
+
+                                Visuelle Filter und Übersichten halten dein Team synchron.
                             </p>
                         </div>
                     </div>
@@ -193,9 +290,11 @@
                         <div class="card-content">
                             <h3 class="title is-4">Wissen aufbauen</h3>
                             <p class="block">
-                                Nutze bewährte Projektstrukturen erneut.
-                                So musst du das Rad nicht jedes Mal neu erfinden
-                                und vergisst keine wichtigen Projektphasen oder Aufgaben.
+                                Nutze bewährte Projektstrukturen immer wieder.
+
+                                So vergisst du keine Projektphasen und musst das Rad nicht neu
+                                erfinden.
+                                Erzeuge neue Projekte direkt aus Offerten oder Aufgabenlisten.
                             </p>
                         </div>
                     </div>
@@ -204,45 +303,74 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="section">
-        <div class="container has-text-centered">
-             <h2 class="title">So funktioniert Druyn</h2>
+    <!-- CTA REPETITION -->
+    <section class="section has-text-centered">
+        <div class="container">
+            <h2 class="title">Bereit für realistische Projektplanung?</h2>
+
+            <div class="buttons is-centered mt-5">
+                <a class="button is-primary is-medium" href="https://app.druyn.com/signup">
+                    Kostenlos ausprobieren
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- PLANS AND PRICING -->
     <section class="section">
         <div class="container has-text-centered py-4">
-            <h2 class="title mb-6">Plans and pricing</h2>
+            <h2 class="title mb-6">
+                Leuchtturmphase – begrenzte Teilnahme
+            </h2>
             <div class="columns">
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Small Piper</h3>
-                            <p class="block">Join our network, but build and manage everything yourself.</p>
-                            <h4 class="title is-spaced is-5">$10 <small>Per user / monthly</small></h4>
-                            <button class="button is-primary" type="button">Contact Sales</button>
+                            <h3 class="title is-4">Kostenlose 90-Tage Test Periode</h3>
+                            <p class="block">
+                                Probiere aus, ob Druyn dein Leben einfacher machen kann, entweder
+                                als Einzelbenutzer oder als Team.
+                            </p>
+                            <h4 class="title is-spaced is-5">
+                                0 CHF <small>3 Monate</small>
+                            </h4>
+                            <button class="button is-primary" type="button">
+                                Kontaktiere den Verkauf
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Medium Piper</h3>
-                            <p class="block">We build what you need, but you still need to manage your data.</p>
-                            <h4 class="title is-spaced is-5">$50 <small>Per user / monthly</small></h4>
-                            <button class="button is-primary is-outlined" type="button">Contact Sales</button>
+                            <h3 class="title is-4">Einzelbenutzer</h3>
+                            <p class="block">
+                                Gewinne deine Übersicht zurück, besonders wenn du an mehreren
+                                Projekten gleichzeitig arbeitest.
+                            </p>
+                            <h4 class="title is-spaced is-5">
+                                5 CHF <small>Pro Benutzer / monatlich</small>
+                            </h4>
+                            <button class="button is-primary" type="button">
+                                Kontaktiere den Verkauf
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="card">
                         <div class="card-content">
-                            <h3 class="title is-4">Enterprise Piper</h3>
-                            <p class="block">We do everything for you, including managing your data.</p>
-                            <h4 class="title is-spaced is-5">$100 <small>Per user / monthly</small></h4>
-                            <button class="button is-primary is-outlined" type="button">Contact Sales</button>
+                            <h3 class="title is-4">Team Plan</h3>
+                            <p class="block">
+                                Dein Team arbeitet kooperativ an Projekten, dann ist dieser Plan
+                                optimal für dich.
+                            </p>
+                            <h4 class="title is-spaced is-5">
+                                30 CHF <small>Team mit maximal 15 Mitgliedern / monatlich</small>
+                            </h4>
+                            <button class="button is-primary" type="button">
+                                Kontaktiere den Verkauf
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -250,5 +378,22 @@
         </div>
     </section>
 
+
+    <script>
+        const tabs = document.querySelectorAll('.tabs li')
+        const contents = document.querySelectorAll('.tab-content')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('is-active'))
+                tab.classList.add('is-active')
+
+                contents.forEach(c => c.style.display = 'none')
+
+                const id = tab.dataset.tab
+                document.getElementById(id).style.display = 'block'
+            })
+        })
+    </script>
 </body>
 </html>
