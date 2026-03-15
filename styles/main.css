@@ -3,12 +3,6 @@
     background-color:lightgrey;
 }
 
-.druyn-brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
 .brand-text{
     font-weight:600;
     font-size:1.1rem;
