@@ -31,26 +31,3 @@
     background-size: cover;
     background-position: center;
 }
-
-.header-image::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.35);
-}
-
-.cycle {
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    font-weight:600;
-    font-size:1.1rem;
-}
-
-.cycle span {
-    opacity:0.8;
-}
-
-.cycle .arrow {
-    opacity:0.5;
-}
