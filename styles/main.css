@@ -19,3 +19,15 @@
     background-size: cover;
     background-position: center;
 }
+
+.button.is-primary {
+    background-color: #8DD35F;
+    border-color: transparent;
+    color: #1f2d1f;
+}
+
+.button.is-primary:hover {
+    background-color: #7fc451;
+    border-color: transparent;
+    color: #1f2d1f;
+}
