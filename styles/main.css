@@ -27,3 +27,15 @@
 .has-background-druyn-light {
     background-color: #F3FAEC !important;
 }
+
+/* Active tab color */
+.tabs li.is-active a {
+    color: #8DD35F;
+    border-bottom-color: #8DD35F;
+}
+
+/* Hover color for inactive tabs */
+.tabs a:hover {
+    color: #F3FAEC;
+    border-bottom-color: #F3FAEC;
+}
