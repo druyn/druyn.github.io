@@ -15,7 +15,7 @@
 }
 
 .header-image {
-    background-image: url("/images/hero_2200.jpg");
+    background-image: url("/images/hero.svg");
     background-size: cover;
     background-position: center;
 }
