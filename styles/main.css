@@ -30,8 +30,8 @@
 
 /* Active tab color */
 .tabs li.is-active a {
-    color: #8DD35F;
-    border-bottom-color: #8DD35F;
+    color: #8DD35F !important;
+    border-bottom-color: #8DD35F !important;
 }
 
 /* Hover color for inactive tabs */
