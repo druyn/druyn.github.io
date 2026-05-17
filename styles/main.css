@@ -1,4 +1,8 @@
 
+:root {
+    --druyn-accent: #8dd35f;
+}
+
 .custom-background{
     background-color:lightgrey;
 }
@@ -22,7 +26,7 @@
 
 .surface {
     background-color: transparent;
-    border: 2px solid var(--bulma-border-weak);
+    border: 1px solid var(--bulma-border-weak);
     border-radius: 12px;
     padding: 2rem;
     height: 100%;
@@ -33,7 +37,8 @@
 }
 
 .surface-highlight {
-    border-color: #f3faec;
+    border: 2px solid var(--druyn-accent);
+    background-color: rgba(207, 232, 180, 0.08);
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
