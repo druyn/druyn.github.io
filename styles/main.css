@@ -22,7 +22,7 @@
 
 .surface {
     background-color: transparent;
-    border: 1px solid var(--bulma-border-weak);
+    border: 2px solid var(--bulma-border-weak);
     border-radius: 12px;
     padding: 2rem;
     height: 100%;
@@ -33,7 +33,7 @@
 }
 
 .surface-highlight {
-    border-color: #8DD35F;
+    border-color: #f3faec;
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
