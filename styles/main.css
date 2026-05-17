@@ -20,22 +20,22 @@
     background-position: center;
 }
 
-.has-background-druyn {
-    background-color: #8DD35F !important;
-}
-
 .has-background-druyn-light {
     background-color: #F3FAEC !important;
 }
 
-/* Active tab color */
-.tabs li.is-active a {
-    color: #5d6c53 !important;
-    border-bottom-color: #5d6c53 !important;
+@media (prefers-color-scheme: dark) {
+    .has-background-druyn-light {
+        background-color: #5d6c53;
+    }
 }
 
-/* Hover color for inactive tabs */
-.tabs a:hover {
-    color: #F3FAEC;
-    border-bottom-color: #F3FAEC;
+/* Mobile: remove Bulma's large line under the tabs */
+@media screen and (max-width: 768px) {
+    .tabs ul {
+        border-bottom: none;
+    }
+    .tabs {
+        border-bottom: 1px solid var(--bulma-border);
+    }
 }
