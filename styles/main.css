@@ -20,22 +20,24 @@
     background-position: center;
 }
 
-.has-background-druyn-light {
-    background-color: #F3FAEC !important;
+.surface {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    .has-background-druyn-light {
-        background-color: #5d6c53;
-    }
+.surface-highlight {
+    border-color: #8DD35F;
+    background: #f3faec;
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
 @media screen and (max-width: 768px) {
     .tabs ul {
-        border-bottom: none;
+        border-bottom: none !important;
     }
     .tabs {
-        border-bottom: 1px solid var(--bulma-border);
+        border-bottom: 1px solid var(--bulma-border) !important;
     }
 }
