@@ -21,15 +21,19 @@
 }
 
 .surface {
-    background: white;
-    border: 1px solid #e5e7eb;
+    background-color: transparent;
+    border: 1px solid var(--bulma-border-weak);
     border-radius: 12px;
     padding: 2rem;
+    height: 100%;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 .surface-highlight {
     border-color: #8DD35F;
-    background: #f3faec;
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
