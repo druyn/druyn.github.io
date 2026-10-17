@@ -43,11 +43,11 @@
 
 .horizontal-line {
     margin: 1.5rem auto;
-    background-color: var(--theme-line-strong);
+    background-color: var(--theme-header-primary);
 }
 
 .footer {
-    background-color: var(--theme-header-primary);
+    background-color: var(--theme-line-strong);
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
