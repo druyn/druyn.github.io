@@ -1,0 +1,85 @@
+/* COLOR OVERRIDES -------------------------------------------------------- */
+
+.navbar.is-dark {
+    --bulma-navbar-background-color: var(--theme-header-primary);
+    --bulma-navbar-item-color: var(--theme-text-inverted);
+    --bulma-navbar-item-hover-background-color: var(--theme-bg-base);
+}
+
+:root {
+    /* Warm up all of default greys to match the Stone theme */
+    --bulma-scheme-h: 35;
+    --bulma-scheme-s: 10%;
+
+    /* Direct override of important colors */
+    --bulma-background: var(--theme-bg-header); /* disabled inputs */
+    --bulma-border: var(--theme-line-subtle); /* tab dividers */
+    --bulma-text: var(--theme-text-primary); /* normal text including svgs */
+    --bulma-text-strong: var(--theme-text-primary); /* panels and modals */
+    --bulma-text-weak: var(--theme-text-secondary); /* disabled inputs */
+
+    --bulma-scheme-main: var(--theme-bg-elevated); /* main background */
+}
+
+/* CUSTOM FLOATING MENU --------------------------------------------------- */
+
+/* Should behave like Bulma dropdown.is-active */
+.context-menu.is-active {
+    display: block;
+}
+
+/* Inject CSS variables which are only available inside bulma dropdown */
+.context-menu {
+    --bulma-dropdown-menu-min-width: 12rem;
+
+    --bulma-dropdown-content-background-color: var(--bulma-scheme-main);
+    --bulma-dropdown-content-offset: 0.25rem;
+    --bulma-dropdown-content-padding-bottom: 0.5rem;
+    --bulma-dropdown-content-padding-top: 0.5rem;
+    --bulma-dropdown-content-radius: var(--bulma-radius);
+    --bulma-dropdown-content-shadow: var(--bulma-shadow);
+
+    --bulma-dropdown-item-h: var(--bulma-scheme-h);
+    --bulma-dropdown-item-s: var(--bulma-scheme-s);
+    --bulma-dropdown-item-l: var(--bulma-scheme-main-l);
+    --bulma-dropdown-item-background-l: var(--bulma-scheme-main-l);
+    --bulma-dropdown-item-background-l-delta: 0%;
+    --bulma-dropdown-item-hover-background-l-delta: var(--bulma-hover-background-l-delta);
+    --bulma-dropdown-item-active-background-l-delta: var(--bulma-active-background-l-delta);
+    --bulma-dropdown-item-color-l: var(--bulma-text-strong-l);
+
+    --bulma-dropdown-item-selected-h: var(--bulma-link-h);
+    --bulma-dropdown-item-selected-s: var(--bulma-link-s);
+    --bulma-dropdown-item-selected-l: var(--bulma-link-l);
+    --bulma-dropdown-item-selected-background-l: var(--bulma-link-l);
+    --bulma-dropdown-item-selected-color-l: var(--bulma-link-invert-l);
+
+    --bulma-dropdown-divider-background-color: var(--bulma-border-weak);
+}
+
+/* DROPDOWNS -------------------------------------------------------------- */
+
+/* Visualize the disabled state */
+.dropdown-item:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+    color: hsl(
+        var(--bulma-text-h),
+        var(--bulma-text-s),
+        var(--bulma-text-weak-l)
+    );
+}
+
+/* NAVBAR ----------------------------------------------------------------- */
+
+/* Restore active navbar indication in dark navbars */
+.navbar.is-dark {
+    --bulma-navbar-item-selected-background-l: var(--bulma-link-l);
+    --bulma-navbar-item-selected-color-l: var(--bulma-link-invert-l);
+}
+
+/* FONT STYLES ------------------------------------------------------------ */
+.title {
+  --bulma-title-weight: 600;
+}

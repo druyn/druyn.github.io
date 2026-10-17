@@ -1,0 +1,52 @@
+:root {
+    /* --- TIER 1: PRIMITIVES --- */
+
+    /* Modern Stone Scale (Warm, organic, sophisticated taupe) */
+    --color-neutral-0:   #FFFFFF;
+    --color-neutral-50:  #F5F7F5; /* L: 97 */
+    /* --color-neutral-100: #EFECE9; */ /* L: 94 */
+    --color-neutral-200: #E4E1DE; /* L: 90 */
+    --color-neutral-300: #D4D0CC; /* L: 84 */
+    --color-neutral-400: #C2BEB9; /* L: 76 */
+    /* --color-neutral-500: #A8A39E; */ /* L: 65 */
+    --color-neutral-800: #595450; /* L: 34 */
+    --color-neutral-1000:#1C1A19; /* L: 10 */
+
+    /* Sage Scale */
+    --color-sage-200: #D5DDD3;
+    --color-sage-500: #A3C4A5;
+
+    /* Accent Scale */
+    --color-green-500: mediumseagreen;
+    --color-red-500:   #D2042D;
+    --color-blue-500:  #2563EB;
+
+    /* --- TIER 2: SEMANTIC MAPPING --- */
+
+    --theme-bg-elevated: var(--color-neutral-0);
+    --theme-bg-surface: var(--color-neutral-50);
+    --theme-bg-header: var(--color-neutral-200);
+    --theme-bg-base: var(--color-neutral-300);
+
+    --theme-bg-blocked:  var(--color-neutral-400);
+    --theme-bg-current: var(--color-sage-200);
+    --theme-bg-highlight: var(--color-sage-500);
+
+    --theme-line-light: var(--color-neutral-50);
+    --theme-line-subtle: var(--color-neutral-200);
+    /* --theme-line-medium: var(--color-neutral-400); */
+    --theme-line-normal: var(--color-neutral-800);
+    --theme-line-strong: var(--color-neutral-1000);
+
+    --theme-header-primary: var(--color-neutral-800);
+    --theme-header-secondary: var(--color-neutral-400);
+    
+    --theme-text-primary: var(--color-neutral-1000);
+    --theme-text-secondary: var(--color-neutral-800);
+    --theme-text-inverted: var(--color-neutral-0);
+
+    /* Status Colors */
+    --accent-positive: var(--color-green-500);
+    --accent-negative: var(--color-red-500);
+    --accent-selected: var(--color-blue-500);
+}

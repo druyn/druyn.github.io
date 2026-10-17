@@ -1,21 +1,20 @@
-
 :root {
-    --druyn-accent: #8dd35f;
+    --druyn-accent: var(--color-sage-500);
 }
 
-.custom-background{
-    background-color:#E4E1DE;
+.custom-background {
+    background-color: var(--color-neutral-50);
 }
 
-.brand-text{
-    font-weight:600;
-    font-size:1.1rem;
+.brand-text {
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
-.brand-tagline{
-    font-size:0.8rem;
-    opacity:0.7;
-    margin-left:8px;
+.brand-tagline {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-left: 8px;
 }
 
 .header-image {
@@ -25,11 +24,12 @@
 }
 
 .surface {
-    background-color: transparent;
-    border: 1px solid #C2BEB9;
+    background-color: var(--color-neutral-0);
+    border: 1px solid var(--color-neutral-200);
     border-radius: 12px;
     padding: 2rem;
     height: 100%;
+    box-shadow: 0 4px 20px var(--color-sage-200);
     transition:
         border-color 0.2s ease,
         box-shadow 0.2s ease,
@@ -37,8 +37,8 @@
 }
 
 .surface-highlight {
-    border: 2px solid var(--druyn-accent);
-    background-color: rgba(207, 232, 180, 0.08);
+    border: 2px solid var(--color-sage-500);
+    background-color: var(--color-sage-200);
 }
 
 /* Mobile: remove Bulma's large line under the tabs */
