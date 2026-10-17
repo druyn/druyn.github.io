@@ -43,7 +43,7 @@
 
 .horizontal-line {
     margin: 1.5rem auto;
-    background-color: var(--theme-line-normal);
+    background-color: var(--theme-line-strong);
 }
 
 .footer {
