@@ -41,6 +41,12 @@
     background-color: var(--theme-bg-current);
 }
 
+.surface-active {
+    border: 2px solid var(--bulma-success);
+    background-color: var(--bulma-success-soft);
+    transform: translateY(-1px);
+}
+
 .horizontal-line {
     margin: 1.5rem auto;
     background-color: var(--theme-header-primary);
