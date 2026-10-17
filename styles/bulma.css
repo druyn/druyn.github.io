@@ -6,11 +6,6 @@
     --bulma-navbar-item-hover-background-color: var(--theme-bg-base);
 }
 
-.footer.has-background-dark.has-text-light {
-    --bulma-footer-background-color: var(--theme-header-primary);
-    --bulma-footer-color: var(--theme-text-inverted);
-}
-
 :root {
     /* Warm up all of default greys to match the Stone theme */
     --bulma-scheme-h: 35;
