@@ -41,6 +41,11 @@
     background-color: var(--color-sage-200);
 }
 
+.horizontal-line {
+    margin: 1.5rem auto;
+    background-color: var(--color-neutral-800);
+}
+
 /* Mobile: remove Bulma's large line under the tabs */
 @media screen and (max-width: 768px) {
     .tabs ul {
